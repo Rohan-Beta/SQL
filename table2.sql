@@ -5,9 +5,9 @@ CREATE DATABASE IF NOT EXISTS xyz;
 USE xyz;
 
 CREATE TABLE employee(
-	id INT PRIMARY KEY,
+    id INT PRIMARY KEY,
     name VARCHAR(50),
-    salary FLOAT NOT NULL
+    salary INT DEFAULT 12000
 );
 
 INSERT INTO employee VALUES(1 , "adam" , 25000.00);
