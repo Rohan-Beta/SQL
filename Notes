@@ -1,0 +1,8 @@
+Genaral Order
+
+SELECT columns
+FROM table_name
+WHERE conditions
+GROUP BY columns
+HAVING conditions
+ORDER BY columns
