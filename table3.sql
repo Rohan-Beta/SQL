@@ -3,7 +3,7 @@
 USE college;
 
 CREATE TABLE student (
-	rollno INT PRIMARY KEY,
+    rollno INT PRIMARY KEY,
     name VARCHAR(100),
     marks INT NOT NULL,
     grade VARCHAR(2),
@@ -60,3 +60,6 @@ SELECT COUNT(name) FROM student;
 SELECT city , COUNT(name) FROM student GROUP BY city;
 SELECT city , COUNT(name) FROM student GROUP BY city ORDER BY city ASC; -- order by and group by
 SELECT city , name , COUNT(name) FROM student GROUP BY city , name ORDER BY name ASC;
+
+-- select city in which atleast one student max marks is more than 90
+SELECT city , COUNT(name) FROM student GROUP BY city HAVING MAX(marks) > 90;
