@@ -3,7 +3,7 @@ CREATE DATABASE college;
 USE college;
 
 CREATE TABLE student (
-	  rollno INT PRIMARY KEY,
+    rollno INT PRIMARY KEY,
     name VARCHAR(100),
     marks INT NOT NULL,
     grade VARCHAR(2),
@@ -26,8 +26,10 @@ SET SQL_SAFE_UPDATES = 0;
 -- update value
 UPDATE student SET grade = "O" WHERE grade = "A";
 UPDATE student SET marks = 80 , grade = "B" WHERE rollno = 105;
+UPDATE student SET marks = marks+1;
+
+-- delete
+DELETE FROM student WHERE marks < 33;
 
 SELECT * FROM student;
-
-
 
