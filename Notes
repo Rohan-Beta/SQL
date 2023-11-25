@@ -6,3 +6,7 @@ WHERE conditions
 GROUP BY columns
 HAVING conditions
 ORDER BY columns
+
+SET SQL_SAFE_UPDATES = 0; (this commands help to turn off safe mode in sql so that we update it)
+
+SET SQL_SAFE_UPDATES = 1; (this commands help to turn on safe mode in sql)
