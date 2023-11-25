@@ -13,4 +13,9 @@ CREATE TABLE employee(
 INSERT INTO employee VALUES(1 , "adam" , 25000.00);
 INSERT INTO employee VALUES(2 , "bob" , 3000.00);
 
+INSERT INTO employee 
+(id , name) 
+VALUES
+(1 , cris);
+
 SELECT * FROM employee;
