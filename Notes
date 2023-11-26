@@ -27,3 +27,9 @@ SET SQL_SAFE_UPDATES = 1; (this commands help to turn on safe mode in sql)
 DROP command is used to delete the table but TRUNCATE is used to delete data from table
 
 Join is used to combine rows from two or more tables, based on a related column between them
+Four type are there:
+
+Inner Join
+Left Join
+Right Join
+Full Join
