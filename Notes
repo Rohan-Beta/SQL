@@ -1,3 +1,16 @@
+SQL is a relational database and mongodb is a non-relational database.
+
+In SQL we perfotm CRUD operations:
+
+Create
+Read
+Update
+Delete
+
+SQL full form : Structured Query Laguage
+
+SQL is also known as SEQUEL(Structured English Query Language) , this language is made by IBM.
+
 Genaral Order
 
 SELECT columns
@@ -12,6 +25,5 @@ SET SQL_SAFE_UPDATES = 0; (this commands help to turn off safe mode in sql so th
 SET SQL_SAFE_UPDATES = 1; (this commands help to turn on safe mode in sql)
 
 DROP command is used to delete the table but TRUNCATE is used to delete data from table
-
 
 Join is used to combine rows from two or more tables, based on a related column between them
