@@ -1,4 +1,4 @@
-// table related queries
+-- table related queries
 
 CREATE DATABASE college;
 
@@ -24,28 +24,28 @@ VALUES
 
 SELECT * FROM student;
 
-// add column
+ -- add column
 ALTER TABLE student
 ADD COLUMN age INT;
 
-// modify column datatype
+ -- modify column datatype
 ALTER TABLE student
 MODIFY COLUMN age VARCHAR(50);
 
-// change column name and its datatype
+--  change column name and its datatype
 ALTER TABLE student
 CHANGE COLUMN age stu_age INT;
 
-// delete column
+ -- delete column
 ALTER TABLE student
 DROP stu_age;
 
-// change table name
+ -- change table name
 ALTER TABLE student
 RENAME TO stu;
 
 ALTER TABLE stu
 RENAME TO student;
 
-// delete data from table
+ -- delete data from table
 TRUNCATE TABLE student;
