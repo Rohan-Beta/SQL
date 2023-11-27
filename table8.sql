@@ -33,9 +33,37 @@ VALUES
 
 SELECT * FROM course;
 
--- inner join
+-- Inner join
 
 SELECT *
 FROM student
 INNER JOIN course
+ON student.id = course.id;
+
+-- Left join
+
+SELECT *
+FROM student
+LEFT JOIN course
+ON student.id = course.id;
+
+-- Right join
+
+SELECT *
+FROM student
+RIGHT JOIN course
+ON student.id = course.id;
+
+-- Full join
+
+SELECT *
+FROM student
+LEFT JOIN course
+ON student.id = course.id
+
+UNION
+
+SELECT *
+FROM student
+RIGHT JOIN course
 ON student.id = course.id;
