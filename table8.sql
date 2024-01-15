@@ -67,3 +67,42 @@ SELECT *
 FROM student
 RIGHT JOIN course
 ON student.id = course.id;
+
+-- Right exclusive join
+
+SELECT *
+FROM student
+RIGHT JOIN course
+ON student.id = course.id
+WHERE student.id IS NULL;
+
+-- Left exclusive join
+
+SELECT *
+FROM student
+LEFT JOIN course
+ON student.id = course.id
+WHERE course.id IS NULL;
+
+-- Full exclusive join
+
+SELECT *
+FROM student
+LEFT JOIN course
+ON student.id = course.id
+WHERE course.id IS NULL
+
+UNION
+
+SELECT *
+FROM student
+RIGHT JOIN course
+ON student.id = course.id
+WHERE student.id IS NULL;
+
+-- Self join
+
+SELECT student.name , course.course
+FROM student
+JOIN course
+ON student.id = course.id;
